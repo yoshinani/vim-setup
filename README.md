@@ -9,14 +9,14 @@
     - `.vimrc` は `autoload` の `*.vim` を読み込むようにしています
 
 ```
-cd ~/ && git clone git@github.com:yutanakano/vim.git
+cd ~/ && git clone git@github.com:yutanakano/vim-setup.git
 sh ~/vim-setup/setup.sh
 ```
 
 # pluginの導入方法
 
 - [※](https://teratail.com/questions/63742) pluginの追加は `if dein#load_state('/Users/aizawasatoshi/.vim/bundle')` のスコープ外に書きます
-    - `~/vim/autoload/plugins/plugin.vim`
+    - `~/vim/autoload/init/plugin.vim` を自動的に作成するので、そこに追加したいpluginを記述してください
 
 - pluginのインストール
 

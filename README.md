@@ -5,6 +5,8 @@
 # Howto
 
 - 初回起動時に以下を実行
+    - 必要なDirectory構成を構築します
+    - `.vimrc` は `autoload` の `*.vim` を読み込むようにしています
 
 ```
 cd ~/ && git clone git@github.com:yutanakano/vim.git

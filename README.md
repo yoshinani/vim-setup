@@ -20,6 +20,12 @@ sh ~/vim-setup/setup.sh
 sh ~/vim-setup/execution.sh
 ```
 
+- deinだけを入れ直したい場合は以下を実行してください
+
+```
+sh ~/vim-setup/rebuild.sh
+```
+
 # pluginの導入方法
 
 - [※](https://teratail.com/questions/63742) pluginの追加は `if dein#load_state('/Users/aizawasatoshi/.vim/bundle')` のスコープ外に書きます

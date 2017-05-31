@@ -6,11 +6,11 @@ cp ~/vim-setup/.vimrc ~/vim/.vimrc
 # plugin設定ファイルを作成
 touch ~/vim/autoload/init/plugin.vim
 # dein.vimの導入
-mkdir ~/.vim/dein && cd ~/.vim/dein
+mkdir ~/.cache/dein && cd ~/.cache/dein
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 # dein.vimの実行結果をplugin.vimに整形して書き込む
 trap 'rm "$TMP"' EXIT
 TMP=`mktemp` 
-sh ./installer.sh ~/.vim/dein > $TMP
+sh ./installer.sh ~/.cache/dein > $TMP
 sed -n -e "/dein Scripts/,/End dein Scripts/p" $TMP > ~/vim/autoload/init/plugin.vim
 echo 'vim-setup setup.sh done'

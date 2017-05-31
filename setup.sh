@@ -13,7 +13,4 @@ trap 'rm "$TMP"' EXIT
 TMP=`mktemp` 
 sh ./installer.sh ~/.vim/dein > $TMP
 sed -n -e "/dein Scripts/,/End dein Scripts/p" $TMP > ~/vim/autoload/init/plugin.vim
-# シンボリックリンクを作成
-cd ~/.vim && ln -s ~/vim/autoload
-cd ~/ && ln -s ~/vim/.vimrc
-echo 'vim-setup done'
+echo 'vim-setup setup.sh done'

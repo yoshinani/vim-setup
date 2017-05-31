@@ -13,6 +13,13 @@ cd ~/ && git clone git@github.com:yutanakano/vim-setup.git
 sh ~/vim-setup/setup.sh
 ```
 
+- `~/vim` の設定が完了後は以下を実行してください
+    - シンボリックリンクが必要箇所に貼られます
+
+```
+sh ~/vim-setup/execution.sh
+```
+
 # pluginの導入方法
 
 - [※](https://teratail.com/questions/63742) pluginの追加は `if dein#load_state('/Users/aizawasatoshi/.vim/bundle')` のスコープ外に書きます

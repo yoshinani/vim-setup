@@ -28,7 +28,7 @@ sh ~/vim-setup/rebuild.sh
 
 # pluginの導入方法
 
-- [※](https://teratail.com/questions/63742) pluginの追加は `if dein#load_state('/Users/aizawasatoshi/.vim/bundle')` のスコープ外に書きます
+- [※](https://teratail.com/questions/63742) pluginの追加は `if dein#load_state('/Users/aizawasatoshi/.cache/bundle')` のスコープ外に書きます
     - `~/vim/autoload/init/plugin.vim` を自動的に作成するので、そこに追加したいpluginを記述してください
 
 - pluginのインストール
